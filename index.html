@@ -2,9 +2,39 @@
 <html>
 <head>
     <title>My First Site</title>
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+        }
+        h1 {
+            color: #1877f2;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #333;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <h1>My First Site Is Live! 🎉</h1>
-    <p>I successfully fixed my GitHub Pages deployment.</p>
+    <div class="card">
+        <h1>My First Site Is Live! 🎉</h1>
+        <p>I successfully fixed my GitHub Pages deployment and added styling!</p>
+    </div>
 </body>
 </html>
