@@ -1,40 +1,137 @@
-<!DOCTYPE html>
-<html>
+!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>My First Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rigan Media Hub</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
-            background-color: #f0f2f5;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117;
+            font-family: 'Segoe UI', sans-serif;
+            color: #ffffff;
+            padding: 15px;
+        }
+        header {
+            background: linear-gradient(135deg, #ff0055, #7000ff);
+            padding: 25px 15px;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(112, 0, 255, 0.3);
+        }
+        header h1 {
+            font-size: 26px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .section-title {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #ff0055;
+            border-left: 4px solid #7000ff;
+            padding-left: 8px;
+        }
+        .grid-container {
             display: flex;
             flex-direction: column;
+            gap: 15px;
+        }
+        .media-card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 15px;
+            display: flex;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
+            justify-content: space-between;
+            transition: transform 0.2s;
         }
-        .card {
-            background-color: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 80%;
+        .media-card:active {
+            transform: scale(0.98);
         }
-        h1 {
-            color: #1877f2;
-            margin-bottom: 10px;
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
         }
-        p {
-            color: #333;
-            font-size: 18px;
+        .track-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        .artist {
+            font-size: 13px;
+            color: #8b949e;
+        }
+        .badge {
+            background-color: #21262d;
+            color: #58a6ff;
+            font-size: 11px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            width: fit-content;
+        }
+        .download-btn {
+            background-color: #238636;
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: bold;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
         }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>My First Site Is Live! 🎉</h1>
-        <p>I successfully fixed my GitHub Pages deployment and added styling!</p>
+
+    <header>
+        <h1>RIGAN MEDIA HUB 🎧</h1>
+        <p>Latest Ugandan Music & VJ Translated Entertainment</p>
+    </header>
+
+    <h2 class="section-title">Trending Audio Downloads</h2>
+    
+    <div class="grid-container">
+        <!-- Track 1 -->
+        <div class="media-card">
+            <div class="info">
+                <span class="track-title">Tutoba Nabwo</span>
+                <span class="artist">King Saha</span>
+                <span class="badge">MP3 Audio</span>
+            </div>
+            <a href="#" class="download-btn">Download</a>
+        </div>
+
+        <!-- Track 2 -->
+        <div class="media-card">
+            <div class="info">
+                <span class="track-title">Agalifa</span>
+                <span class="artist">Alien Skin</span>
+                <span class="badge">Hot Release</span>
+            </div>
+            <a href="#" class="download-btn">Download</a>
+        </div>
+
+        <!-- Track 3 -->
+        <div class="media-card">
+            <div class="info">
+                <span class="track-title">VJ Translation Pack</span>
+                <span class="artist">Action Movie Section</span>
+                <span class="badge">MP4 Video</span>
+            </div>
+            <a href="#" class="download-btn">Download</a>
+        </div>
     </div>
+
 </body>
 </html>
